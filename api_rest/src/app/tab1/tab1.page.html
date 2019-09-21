@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Tab One
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<div *ngIf="err" class="alert alert-danger m-5">
+    <h3>Error</h3>
+    <p>No fue posible conectarse con el servidor</p>
+</div>
+<ion-content>
+    <ion-card class="welcome-card" *ngFor="let person of people">
+
+        <ion-card-header>
+            <ion-card-title>{{ person.nombre }}</ion-card-title>
+            <ion-card-subtitle>{{ person.edad }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <p>
+
+            </p>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>
