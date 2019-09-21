@@ -7,7 +7,7 @@
 </ion-header>
 <div *ngIf="err" class="alert alert-danger m-5">
     <h3>Error</h3>
-    <p>No fue posible conectarse con el servidor</p>
+    <p> {{ errorMessage }} </p>
 </div>
 <ion-content>
     <ion-card class="welcome-card" *ngFor="let person of people">

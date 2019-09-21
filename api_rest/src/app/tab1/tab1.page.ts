@@ -18,8 +18,9 @@ export class Tab1Page implements OnInit {
       this.people = people;
      }, error => {
        this.err = true;
+       error = JSON.stringify(error);
        this.errorMessage = error;
-    }
+      }
       );
 
   }

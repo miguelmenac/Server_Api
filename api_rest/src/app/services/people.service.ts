@@ -25,8 +25,8 @@ export class PeopleService {
     if (err.error instanceof ErrorEvent) {
       errorMessage = `An error ocurred ${ err.error.message }`;
     } else {
-      errorMessage = `Server returned code: ${err.status}, error message is: ${err.message}`;
-  }
+      errorMessage = `El servidor respondió: ${err.status}`;
+    }
     console.log(errorMessage);
     return throwError(errorMessage);
     }
